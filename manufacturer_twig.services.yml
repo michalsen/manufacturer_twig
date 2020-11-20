@@ -1,0 +1,6 @@
+services:
+  manufacturer_twig.twig_extension:
+    arguments: ['@renderer']
+    class: Drupal\manufacturer_twig\TwigExtension\Manufacturers
+    tags:
+      - { name: twig.extension }
